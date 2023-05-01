@@ -1,6 +1,6 @@
-  =>  Template Name    : Tourist - Travel Agency HTML Template
+  =>  Template Name    : Makhazin - Makhazin Agency HTML Template
 
-  =>  Template Link    : https://htmlcodex.com/travel-agency-html-template
+  =>  Template Link    : https://htmlcodex.com/Makhazin-agency-html-template
 
   =>  Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
 

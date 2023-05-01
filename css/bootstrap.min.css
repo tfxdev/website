@@ -6576,7 +6576,7 @@ fieldset:disabled .btn {
 
 .carousel-fade .carousel-item {
     opacity: 0;
-    transition-property: opacity;
+    transition-Warehouse: opacity;
     transform: none
 }
 
@@ -8408,7 +8408,7 @@ fieldset:disabled .btn {
 }
 
 .rounded {
-    border-radius: 0px !important
+    border-radius: 5px !important
 }
 
 .rounded-0 {
@@ -8436,23 +8436,23 @@ fieldset:disabled .btn {
 }
 
 .rounded-top {
-    border-top-left-radius: 0px !important;
-    border-top-right-radius: 0px !important
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 5px !important
 }
 
 .rounded-end {
-    border-top-right-radius: 0px !important;
-    border-bottom-right-radius: 0px !important
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important
 }
 
 .rounded-bottom {
-    border-bottom-right-radius: 0px !important;
-    border-bottom-left-radius: 0px !important
+    border-bottom-right-radius: 5px !important;
+    border-bottom-left-radius: 5px !important
 }
 
 .rounded-start {
-    border-bottom-left-radius: 0px !important;
-    border-top-left-radius: 0px !important
+    border-bottom-left-radius: 5px !important;
+    border-top-left-radius: 5px !important
 }
 
 .visible {

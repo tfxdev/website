@@ -15,6 +15,9 @@
     // Initiate the wowjs
     new WOW().init();
 
+     
+
+
 
     // Sticky Navbar
     $(window).scroll(function () {
@@ -91,4 +94,12 @@
     });
     
 })(jQuery);
+
+
+document.getElementById("open-popup").addEventListener('click', function(){
+    /*document.querySelector(".location-popup").style.display = "block";*/
+    console.log(22)
+});
+
+  
 

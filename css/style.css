@@ -328,6 +328,7 @@ aside.side-bar {
 }
 .service-search-section input[type="search"] {
     border-radius: 20px;
+    background: #e9ecef;
 }
 .service-search-botton{
     display: flex;
@@ -451,6 +452,10 @@ aside.side-bar {
 .popup-text h2 span{
     font-size: 18px;
     color: gray;
+}
+.location-popup-botton {
+    display: flex;
+    justify-content: center;
 }
 
 

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Makhazin - Makhazin Agency HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/login.css" rel="stylesheet">
+</head>
+
+<body class="">
+    <a id="backToSbButton" href="index.html"></a>
+  <div class="login-pf-page">
+    <div id="kc-header" class="login-pf-page-header">
+      <div id="kc-header-wrapper" class="">Stockbooking</div>
+    </div>
+    <div class="card-pf ">
+      <header class="login-pf-header">
+        <h1 id="kc-page-title">Connexion</h1>
+      </header>
+      <div id="kc-content">
+        <div id="kc-content-wrapper">
+
+
+    <div id="kc-form" >
+      <div id="kc-form-wrapper">
+            <form id="kc-form-login" onsubmit="login.disabled = true; return true;" action="https://iam.stock-booking.com/auth/realms/stock-booking/login-actions/authenticate?session_code=RXuc83sAmYZtinfZmbDgyIi_zhyXeSn6v3coIZbKBbI&amp;execution=1a5ccc53-275f-4b95-8e71-1e220fcb98f4&amp;client_id=sbapp-frontend&amp;tab_id=0EK_9sDbqRo" method="post">
+
+                <div class="form-group">
+                    <label for="username" class="control-label">Adresse e-mail</label>
+
+                        <input tabindex="1" id="username" class="form-control" name="username" value=""  type="text" autofocus autocomplete="off" />
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="control-label">Mot de passe</label>
+                    <input tabindex="2" id="password" class="form-control" name="password" type="password" autocomplete="off" />
+                </div>
+
+                <div class="form-group login-pf-settings">
+                    <div id="kc-form-options">
+                            <div class="checkbox">
+                                <label>
+                                        <input tabindex="3" id="rememberMe" name="rememberMe" type="checkbox"> Se souvenir de moi
+                                </label>
+                            </div>
+                        </div>
+                        <div class="">
+                                <span><a tabindex="5" href="/auth/realms/stock-booking/login-actions/reset-credentials?client_id=sbapp-frontend&amp;tab_id=0EK_9sDbqRo">Mot de passe oublié ?</a></span>
+                        </div>
+
+                  </div>
+
+                  <div id="kc-form-buttons" class="form-group">
+                    <input tabindex="4" class="btn btn-primary btn-block btn-lg" name="login" id="kc-login" type="submit" value="Connexion"/>
+                  </div>
+            </form>
+        </div>
+      </div>
+
+
+              <div id="kc-info" class="login-pf-signup">
+                  <div id="kc-info-wrapper" class="">
+            <div id="kc-registration">
+                <span>Nouvel utilisateur ? <a tabindex="6" href="resister.html">Créer un compte</a></span>
+            </div>
+
+                  </div>
+              </div>
+        </div>
+      </div>
+        <div id="returnLinkContainer">
+          <a href='https://www.stock-booking.com/'>« Revenir à l&#39;application</a>
+        </div>
+    </div>
+  </div>
+  <script>
+    if ((window.location.pathname === "/auth/realms/stock-booking/login-actions/required-action") && !document.getElementById("backToApplication")) {
+      document.getElementById("returnLinkContainer").className = "show";
+    }
+  </script>
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

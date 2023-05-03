@@ -271,32 +271,45 @@
             <!-- Modal -->
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
                 aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog " style="max-width: 1000px !important; width: 100% !important; height: 90vh !important;">
+                <div class="modal-dialog " style="max-width: 1000px !important; width: 100% !important; height: 60vh !important;">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                            <h1 class="modal-title fs-3" id="staticBackdropLabel">Ask for a quote</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <!-- multistep form -->
-                            <form id="msform">
+                            <form id="msform" class="text-dark">
                                 <!-- progressbar -->
                                 <ul id="progressbar">
-                                    <li class="active">Account Setup</li>
+                                    <li class="active">YOUR PRODUCTS</li>
                                     <li>Social Profiles</li>
+                                    <li>Personal Details</li>
                                     <li>Personal Details</li>
                                 </ul>
                                 <!-- fieldsets -->
                                 <fieldset>
-                                    <h2 class="fs-title">YOUR PRODUCTS</h2>
-                                    <input type="text" name="email" placeholder="Email" />
-                                    <input type="password" name="pass" placeholder="Password" />
-                                    <input type="password" name="cpass" placeholder="Confirm Password" />
-                                    <input type="button" name="next" class="next action-button" value="Next" />
+                                    <div class="text-start ps-3 py-2"><b>Type of product</b></div>
+                                    <select class="form-select rounded-20" aria-label="Type of product">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1"> Autre </option>
+                                        <option value="2"> A forte valeur </option>
+                                        <option value="3"> Aérosol </option>
+                                      </select>                                    
+                                      <div class="text-start ps-3 py-2"><b>Type of product</b></div>
+                                      <select class="form-select rounded-20" aria-label="Type of product">
+                                          <option selected>Open this select menu</option>
+                                          <option value="1"> Autre </option>
+                                          <option value="2"> A forte valeur </option>
+                                          <option value="3"> Aérosol </option>
+                                        </select>
+                                    <div class="text-start ps-3 py-2"><b>Quantity </b></div>
+                                    <input class="rounded-20 py-2 fs-6" type="number" name="cpass" placeholder="Quantity" />
+                                    <input type="button" name="next" class="rounded-20 next action-button" value="Next" />
                                 </fieldset>
+
                                 <fieldset>
-                                    <h2 class="fs-title">Social Profiles</h2>
-                                    <h3 class="fs-subtitle">Your presence on the social network</h3>
+                                    <div class="text-start ps-3 py-2"><b>Email</b></div>
                                     <input type="text" name="twitter" placeholder="Twitter" />
                                     <input type="text" name="facebook" placeholder="Facebook" />
                                     <input type="text" name="gplus" placeholder="Google Plus" />
@@ -305,8 +318,16 @@
                                     <input type="button" name="next" class="next action-button" value="Next" />
                                 </fieldset>
                                 <fieldset>
-                                    <h2 class="fs-title">Personal Details</h2>
-                                    <h3 class="fs-subtitle">We will never sell it</h3>
+                                    <div class="text-start ps-3 py-2"><b>Email</b></div>
+                                    <input type="text" name="twitter" placeholder="Twitter" />
+                                    <input type="text" name="facebook" placeholder="Facebook" />
+                                    <input type="text" name="gplus" placeholder="Google Plus" />
+                                    <input type="button" name="previous" class="previous action-button"
+                                        value="Previous" />
+                                    <input type="button" name="next" class="next action-button" value="Next" />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="text-start ps-3 py-2"><b>Email</b></div>
                                     <input type="text" name="fname" placeholder="First Name" />
                                     <input type="text" name="lname" placeholder="Last Name" />
                                     <input type="text" name="phone" placeholder="Phone" />

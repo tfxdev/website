@@ -371,6 +371,7 @@ aside.side-bar {
 }
 .rating-location i{
     font-weight: 600;
+    font-size: 12px;
     font-family: 'Font Awesome 5 Free';
     color: #ffd700;
 }
@@ -458,7 +459,14 @@ aside.side-bar {
     justify-content: center;
 }
 
-
+.sdfsdfs {
+    padding-top: 15px !important;
+    background: #f3f3f3;
+}
+.sdfsdfs:hover {
+    background: #dedede;
+    cursor: pointer;
+}
 
 main {
     margin-left: 500px;
@@ -781,6 +789,22 @@ main {
 #progressbar li.active:before,  #progressbar li.active:after{
 	background: #27AE60;
 	color: white;
+}
+.sadf {
+    height: 80px;
+}
+@media only screen and (max-width: 600px) {
+    
+    body{
+        overflow: hidden;
+    }
+    .col-xl-3.col-lg-5.col-md-6.p-5.border-end.position-relative.vh-md-50.left-col {
+        height: 50vh !important;
+        overflow-y: scroll !important;
+    }
+    .col-xl-9.col-lg-7.col-lg-3.col-md-6.p-0.float-md-start.map-col {
+        height: 50vh !important;
+    }
 }
 
 

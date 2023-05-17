@@ -284,9 +284,10 @@ select.form-control {
     background: #333;
     position: fixed;
     width: 100%;
+    z-index: 9;
 }
-.service-search-section{
-
+.service-menu-color span{
+    color: #fff;
 }
 
 
@@ -338,7 +339,12 @@ aside.side-bar {
 .service-search-botton button{
     margin: 20px 0;
 }
-
+.location-list-items li{
+    list-style: none;
+}
+.location-list-items ul{
+    padding: 0;
+}
 .single-location-list-item {
     display: flex;
     cursor: pointer;
@@ -357,7 +363,7 @@ aside.side-bar {
     border-radius: 5px;
 }
 .single-location-list-item-text {
-    margin-left: -15px;
+    margin-left: 18px;
 }
 .single-location-list-item-text ul li{
     list-style: none;
@@ -670,125 +676,163 @@ main {
 
 
 
+:root {
+  --background-color1: #fafaff;
+  --background-color2: #ffffff;
+  --background-color3: #ededed;
+  --background-color4: #cad7fda4;
+  --primary-color: #4b49ac;
+  --secondary-color: #0c007d;
+  --Border-color: #3f0097;
+  --one-use-color: #3f0097;
+  --two-use-color: #5500cb;
+}
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+ 
 
-/*custom font*/
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
+.main-container {
+  display: flex;
+  width: 100vw;
+  position: relative;
+  top: 70px;
+  z-index: 1;
+}
+.dpicn {
+  height: 42px;
+}
+ 
+.main {
+  height: calc(100vh - 70px);
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 40px 30px 30px 30px;
+}
+ 
+.main::-webkit-scrollbar-thumb {
+  background-image:
+        linear-gradient(to bottom, rgb(0, 0, 85), rgb(0, 0, 50));
+}
+.main::-webkit-scrollbar {
+  width: 5px;
+}
+.main::-webkit-scrollbar-track {
+  background-color: #9e9e9eb2;
+}
+ 
+.nav {
+  min-height: 91vh;
+  width: 250px;
+  background-color: var(--background-color2);
+  position: absolute;
+  top: 0px;
+  left: 00;
+  box-shadow: 1px 1px 10px rgba(198, 189, 248, 0.825);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 30px 0 20px 10px;
+}
+.navcontainer {
+  height: calc(100vh - 70px);
+  width: 250px;
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.navcontainer::-webkit-scrollbar {
+  display: none;
+}
+.navclose {
+  width: 80px;
+}
+.nav-option {
+  width: 350px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px 0 20px;
+  gap: 20px;
+  transition: all 0.1s ease-in-out;
+}
+.nav-option:hover {
+  border-left: 5px solid #a2a2a2;
+  background-color: #dadada;
+  cursor: pointer;
+}
+.nav-img {
+  height: 30px;
+}
+ 
+.nav-upper-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.nav-upper-options h3{
+    font-size: 20px;
+    margin: 0;
+}
+.nav-upper-options a{
+    font-size: 15px;
+    color: #000;
+}
+.option1 {
+  color: #000;
+  cursor: pointer;
+}
 
-/*form styles*/
-#msform {
-	width: 100%;
-	margin: 50px auto;
-	text-align: center;
-	position: relative;
-    height: 60vh;
+.topic {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
-#msform fieldset {
-	background: white;
-	border: 0 none;
-	border-radius: 3px;
-	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
-	padding: 20px 30px;
-	box-sizing: border-box;
-	width: 80%;
-	margin: 0 10%;
-	
-	/*stacking fieldsets above each other*/
-	position: relative;
+ 
+.topic-heading {
+  font-size: 30px;
+  letter-spacing: 3px;
 }
-/*Hide all except first fieldset*/
-#msform fieldset:not(:first-of-type) {
-	display: none;
+ 
+.report-container {
+  min-height: 300px;
+  max-width: 1200px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 3px 3px 10px rgb(188, 188, 188);
+  padding: 0px 20px 20px 20px;
+  margin-left: 20px;
 }
-/*inputs*/
-#msform input, #msform textarea {
-	padding: 15px;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	margin-bottom: 10px;
-	width: 100%;
-	box-sizing: border-box;
-	font-family: montserrat;
-	color: #2C3E50;
-	font-size: 13px;
+.report-header {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 10px 20px;
+  border-bottom: 2px solid var(--primary);
 }
-/*buttons*/
-#msform .action-button {
-	width: 100px;
-	background: #27AE60;
-	font-weight: bold;
-	color: white;
-	border: 0 none;
-	border-radius: 1px;
-	cursor: pointer;
-	padding: 10px;
-	margin: 10px 5px;
-  text-decoration: none;
-  font-size: 14px;
+ 
+.recent-Articles {
+  font-size: 30px;
+  font-weight: 600;
+  color: #5500cb;
 }
-#msform .action-button:hover, #msform .action-button:focus {
-	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
-}
-/*headings*/
-.fs-title {
-	font-size: 15px;
-	text-transform: uppercase;
-	color: #2C3E50;
-	margin-bottom: 10px;
-}
-.fs-subtitle {
-	font-weight: normal;
-	font-size: 13px;
-	color: #666;
-	margin-bottom: 20px;
-}
-/*progressbar*/
-#progressbar {
-	margin-bottom: 30px;
-	overflow: hidden;
-	/*CSS counters to number the steps*/
-	counter-reset: step;
-}
-#progressbar li {
-	list-style-type: none;
-	color: white;
-	text-transform: uppercase;
-	font-size: 9px;
-	width: 33.33%;
-	float: left;
-	position: relative;
-}
-#progressbar li:before {
-	content: counter(step);
-	counter-increment: step;
-	width: 20px;
-	line-height: 20px;
-	display: block;
-	font-size: 10px;
-	color: #333;
-	background: white;
-	border-radius: 3px;
-	margin: 0 auto 5px auto;
-}
-/*progressbar connectors*/
-#progressbar li:after {
-	content: '';
-	width: 100%;
-	height: 2px;
-	background: white;
-	position: absolute;
-	left: -50%;
-	top: 9px;
-	z-index: -1; /*put it behind the numbers*/
-}
-#progressbar li:first-child:after {
-	/*connector not needed before the first step*/
-	content: none; 
-}
-/*marking active/completed steps green*/
-/*The number of the step and the connector before it = green*/
-#progressbar li.active:before,  #progressbar li.active:after{
-	background: #27AE60;
-	color: white;
+ 
+.view {
+  height: 35px;
+  width: 90px;
+  border-radius: 8px;
+  background-color: #5500cb;
+  color: white;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
 }
 .sadf {
     height: 80px;
